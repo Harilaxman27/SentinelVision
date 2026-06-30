@@ -1,18 +1,4 @@
-"""
-Module: plugins.shoplifting.extractor
-
-Purpose:
-ShopliftingExtractor extending BehaviourExtractorBase.
-
-Responsibilities:
--
-
-Dependencies:
--
-
-Owner:
-SentinelVision
-
-Status:
-TODO
-"""
+"""Extractor."""
+class Extractor:
+    def extract(self) -> None:
+        return None

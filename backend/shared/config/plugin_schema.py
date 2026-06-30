@@ -1,18 +1,3 @@
-"""
-Module: shared.config.plugin_schema
-
-Purpose:
-Pydantic schema for plugin configuration blocks.
-
-Responsibilities:
--
-
-Dependencies:
--
-
-Owner:
-SentinelVision
-
-Status:
-TODO
-"""
+"""Plugin Schema."""
+from backend.shared.config.schema import ShopliftingPluginConfig
+__all__ = ["ShopliftingPluginConfig"]

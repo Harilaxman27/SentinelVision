@@ -1,18 +1,3 @@
-"""
-Module: scripts.eval_tracking
-
-Purpose:
-Computes tracking MOTA on annotated video clips.
-
-Responsibilities:
--
-
-Dependencies:
--
-
-Owner:
-SentinelVision
-
-Status:
-TODO
-"""
+"""Eval."""
+if __name__ == "__main__":
+    print("Eval tracking")

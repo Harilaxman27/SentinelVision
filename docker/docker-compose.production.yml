@@ -1,2 +1,6 @@
-# Production overrides
-# TODO
+version: "3.8"
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.backend

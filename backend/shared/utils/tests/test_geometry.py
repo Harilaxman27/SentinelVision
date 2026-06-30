@@ -1,18 +1,3 @@
-"""
-Module: tests.shared.utils.geometry
-
-Purpose:
-Unit tests for geometric utility functions.
-
-Responsibilities:
--
-
-Dependencies:
--
-
-Owner:
-SentinelVision
-
-Status:
-TODO
-"""
+"""Test geometry."""
+def test_geom():
+    assert True

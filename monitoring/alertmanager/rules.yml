@@ -1,1 +1,6 @@
-# TODO
+groups:
+  - name: sentinelvision_alerts
+    rules:
+      - alert: HighCPUUsage
+        expr: process_cpu_seconds_total > 0.8
+        for: 5m

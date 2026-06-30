@@ -1,0 +1,44 @@
+# syntax=docker/dockerfile:1.4
+FROM python:3.12-slim-bookworm AS base
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    POETRY_VERSION=1.7.1 \
+    POETRY_HOME="/opt/poetry" \
+    POETRY_VIRTUALENVS_IN_PROJECT=true \
+    POETRY_NO_INTERACTION=1 \
+    PATH="/opt/poetry/bin:$PATH"
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    build-essential \
+    ffmpeg \
+    libsm6 \
+    libxext6 \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN curl -sSL https://install.python-poetry.org | python3 -
+
+WORKDIR /app
+COPY pyproject.toml poetry.lock* ./
+# Install main dependencies, OpenCV, OpenVINO, etc.
+RUN poetry install --no-root --only main
+
+FROM python:3.12-slim-bookworm AS runtime
+
+ENV PATH="/app/.venv/bin:$PATH" \
+    PYTHONPATH="/app"
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg \
+    libsm6 \
+    libxext6 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY --from=base /app/.venv /app/.venv
+COPY backend/ ./backend/
+COPY config/ ./config/
+
+# Requires SENTINEL_CAMERA_ID env var at runtime
+CMD ["python", "-m", "backend.camera_worker.main"]

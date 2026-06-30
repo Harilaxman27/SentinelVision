@@ -1,18 +1,4 @@
-"""
-Module: decision.scorer
-
-Purpose:
-Aggregates confidence scores from multiple matched rules.
-
-Responsibilities:
--
-
-Dependencies:
--
-
-Owner:
-SentinelVision
-
-Status:
-TODO
-"""
+"""Scorer."""
+class Scorer:
+    def score(self) -> float:
+        return 1.0

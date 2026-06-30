@@ -1,18 +1,3 @@
-"""
-Module: scripts.eval_detection
-
-Purpose:
-Computes detection mAP on the evaluation dataset.
-
-Responsibilities:
--
-
-Dependencies:
--
-
-Owner:
-SentinelVision
-
-Status:
-TODO
-"""
+"""Eval."""
+if __name__ == "__main__":
+    print("Eval detection")

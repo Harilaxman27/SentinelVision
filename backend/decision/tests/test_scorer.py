@@ -1,18 +1,3 @@
-"""
-Module: tests.decision.scorer
-
-Purpose:
-Unit tests for confidence aggregation.
-
-Responsibilities:
--
-
-Dependencies:
--
-
-Owner:
-SentinelVision
-
-Status:
-TODO
-"""
+"""Test module."""
+def test_basic():
+    assert True

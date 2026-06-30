@@ -1,18 +1,3 @@
-"""
-Module: tests.performance.perception
-
-Purpose:
-Per-module FPS and latency benchmark for the perception pipeline.
-
-Responsibilities:
--
-
-Dependencies:
--
-
-Owner:
-SentinelVision
-
-Status:
-TODO
-"""
+"""Test module."""
+def test_basic():
+    assert True

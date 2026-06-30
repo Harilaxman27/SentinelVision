@@ -1,0 +1,247 @@
+backend/shared/
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ base.py
+⚠ camera.py (stub)
+⚠ camera_schema.py (placeholder)
+✅ context.py
+✅ domain.py
+✅ frame.py
+✅ geometry.py
+✅ geometry.py
+✅ image.py
+✅ infrastructure.py
+⚠ loader.py (stub)
+✅ middleware.py
+✅ perception.py
+✅ person.py
+⚠ plugin_schema.py (placeholder)
+✅ registry.py
+⚠ schema.py (incomplete)
+✅ setup.py
+⚠ test_geometry.py (placeholder)
+⚠ test_image_utils.py (placeholder)
+✅ test_loader.py
+✅ test_logging_context.py
+✅ test_metrics_registry.py
+✅ test_schema_validation.py
+✅ time.py
+
+backend/db/
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ alert.py
+✅ alert_event.py
+⚠ alert_repository.py (stub)
+✅ alert_repository.py
+✅ audit_log.py
+✅ audit_repository.py
+⚠ base.py (stub)
+✅ camera.py
+⚠ camera_repository.py (stub)
+✅ camera_repository.py
+✅ conftest.py
+✅ connection.py
+⚠ interfaces.py (stub)
+✅ operator.py
+⚠ operator_repository.py (stub)
+✅ operator_repository.py
+✅ person.py
+✅ plugin_config.py
+✅ redis_client.py
+✅ store.py
+✅ test_alert_repository.py
+✅ test_camera_repository.py
+✅ test_redis_client.py
+
+config/
+✅ customer_counting.example.yaml
+✅ logging.yaml
+✅ queue_monitoring.example.yaml
+✅ sentinel.development.yaml
+⚠ sentinel.example.yaml (stub)
+✅ sentinel.testing.yaml
+✅ sentinel.yaml
+✅ shoplifting.example.yaml
+
+migrations/
+✅ 0001_initial_schema.py
+✅ env.py
+
+docker/
+⚠ Dockerfile (placeholder)
+⚠ Dockerfile (placeholder)
+⚠ Dockerfile (placeholder)
+✅ Dockerfile.backend
+✅ Dockerfile.camera_worker
+⚠ docker-compose.monitoring.yml (placeholder)
+⚠ docker-compose.production.yml (placeholder)
+✅ docker-compose.yml
+
+deployment/
+✅ docker-compose.prod.yml
+
+monitoring/
+⚠ alertmanager.yml (placeholder)
+✅ dashboards.yaml
+✅ datasources.yaml
+⚠ loki.yml (placeholder)
+✅ prometheus.yaml
+✅ prometheus.yml
+✅ promtail.yml
+⚠ recording_rules.yml (placeholder)
+⚠ rules.yml (placeholder)
+
+scripts/
+⚠ backup_db.sh (placeholder)
+⚠ cleanup_evidence.py (placeholder)
+⚠ download_models.py (placeholder)
+⚠ eval_detection.py (placeholder)
+⚠ eval_reid.py (placeholder)
+⚠ eval_tracking.py (placeholder)
+⚠ export_models.py (placeholder)
+⚠ install_openvino.sh (placeholder)
+⚠ rotate_logs.sh (placeholder)
+⚠ seed_db.py (placeholder)
+⚠ setup_dev.sh (placeholder)
+⚠ start_backend.sh (incomplete)
+⚠ start_camera_worker.sh (incomplete)
+
+backend/events/
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+⚠ base.py (placeholder)
+⚠ conftest.py (placeholder)
+⚠ consumer.py (placeholder)
+⚠ consumer_group.py (incomplete)
+✅ dlq.py
+⚠ interfaces.py (placeholder)
+⚠ interfaces.py (stub)
+⚠ naming.py (placeholder)
+⚠ producer.py (placeholder)
+✅ redis_bus.py
+⚠ schemas.py (incomplete)
+⚠ state_machine.py (placeholder)
+⚠ test_consumer.py (placeholder)
+⚠ test_producer.py (placeholder)
+✅ test_schemas.py
+⚠ test_state_machine.py (placeholder)
+⚠ test_zone_engine.py (placeholder)
+⚠ zone_engine.py (placeholder)
+
+backend/plugins/
+✅ __init__.py
+✅ __init__.py
+⚠ base.py (stub)
+⚠ conftest.py (placeholder)
+✅ context.py
+⚠ exceptions.py (stub)
+✅ manager.py
+⚠ manifest.py (placeholder)
+✅ registry.py
+⚠ test_manager.py (placeholder)
+⚠ test_manifest_validation.py (placeholder)
+
+plugins/
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+⚠ conftest.py (placeholder)
+⚠ extractor.py (placeholder)
+⚠ plugin.py (stub)
+✅ plugin.yaml
+✅ plugin.yaml
+✅ plugin.yaml
+✅ plugin.yaml
+✅ plugin.yaml
+✅ plugin.yaml
+⚠ posture.py (placeholder)
+⚠ rules.yaml (placeholder)
+✅ rules.yaml
+⚠ test_extractor.py (placeholder)
+⚠ test_trajectory.py (placeholder)
+⚠ test_zones.py (placeholder)
+⚠ trajectory.py (placeholder)
+⚠ zones.py (placeholder)
+
+tests/
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+✅ __init__.py
+⚠ conftest.py (placeholder)
+⚠ conftest.py (placeholder)
+⚠ conftest.py (placeholder)
+⚠ factories.py (placeholder)
+⚠ locustfile.py (placeholder)
+⚠ mock_detector.py (placeholder)
+⚠ mock_event_bus.py (placeholder)
+⚠ mock_notifier.py (placeholder)
+⚠ mock_reid.py (placeholder)
+⚠ mock_tracker.py (placeholder)
+⚠ multi_camera_stress.py (placeholder)
+⚠ perception_benchmark.py (placeholder)
+⚠ test_alert_pipeline.py (placeholder)
+⚠ test_api_alert_flow.py (placeholder)
+⚠ test_camera_to_eventbus.py (placeholder)
+⚠ test_eventbus_to_decision.py (placeholder)
+✅ test_manager.py
+⚠ test_shoplifting_scenario.py (placeholder)
+
+security/
+⚠ bandit.yaml (placeholder)
+✅ plugin_validator.py
+⚠ trivy.yaml (placeholder)
+
+benchmarks/
+⚠ detection_throughput.py (placeholder)
+✅ plugin_bench.py
+⚠ reid_throughput.py (placeholder)
+
+examples/
+✅ dummy_plugin.py
+✅ sentinel.yaml
+✅ sentinel.yaml
+✅ sentinel.yaml
+
+backend/decision/
+✅ __init__.py
+✅ __init__.py
+⚠ conftest.py (placeholder)
+⚠ engine.py (placeholder)
+⚠ incident_state.py (placeholder)
+⚠ rule_loader.py (placeholder)
+⚠ schemas.py (placeholder)
+⚠ scorer.py (placeholder)
+⚠ test_engine.py (placeholder)
+⚠ test_incident_state.py (placeholder)
+⚠ test_rule_loader.py (placeholder)
+⚠ test_scorer.py (placeholder)
+
