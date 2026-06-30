@@ -1,0 +1,5 @@
+name: heatmaps
+version: 0.0.1
+author: SentinelVision Engineering
+description: Zone visit frequency and dwell aggregation heatmaps. (Not yet implemented)
+status: scaffold

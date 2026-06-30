@@ -1,0 +1,12 @@
+system:
+  environment: development
+cameras:
+  - id: cam_01
+    name: Main Entrance
+    url: rtsp://192.168.1.100:554/stream
+    enabled: true
+    frame_skip: 3
+plugins:
+  shoplifting:
+    enabled: true
+    confidence_threshold: 0.6

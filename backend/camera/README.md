@@ -1,0 +1,7 @@
+# Camera
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

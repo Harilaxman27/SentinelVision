@@ -1,0 +1,8 @@
+name: shoplifting
+version: 1.0.0
+author: SentinelVision Engineering
+description: Shoplifting detection plugin using zone dwell, loitering, and concealment analysis.
+requires_modules:
+  - tracking
+  - zone_detection
+  - reid

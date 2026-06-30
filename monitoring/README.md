@@ -1,0 +1,7 @@
+# Monitoring
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

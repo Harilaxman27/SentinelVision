@@ -1,0 +1,5 @@
+# CODEOWNERS
+*                        @sentinelvision/engineering
+backend/perception/      @sentinelvision/ai-team
+plugins/                 @sentinelvision/plugins-team
+frontend/                @sentinelvision/frontend-team

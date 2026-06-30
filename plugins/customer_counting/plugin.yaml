@@ -1,0 +1,5 @@
+name: customer_counting
+version: 0.0.1
+author: SentinelVision Engineering
+description: Entry/exit counting and hourly heatmap. (Not yet implemented)
+status: scaffold

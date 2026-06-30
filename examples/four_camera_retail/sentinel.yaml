@@ -1,0 +1,27 @@
+system:
+  environment: production
+cameras:
+  - id: cam_01
+    name: Entrance
+    url: rtsp://192.168.1.100:554/stream
+    enabled: true
+    frame_skip: 3
+  - id: cam_02
+    name: Electronics Section
+    url: rtsp://192.168.1.101:554/stream
+    enabled: true
+    frame_skip: 3
+  - id: cam_03
+    name: Checkout Area
+    url: rtsp://192.168.1.102:554/stream
+    enabled: true
+    frame_skip: 3
+  - id: cam_04
+    name: Exit
+    url: rtsp://192.168.1.103:554/stream
+    enabled: true
+    frame_skip: 3
+plugins:
+  shoplifting:
+    enabled: true
+    confidence_threshold: 0.6

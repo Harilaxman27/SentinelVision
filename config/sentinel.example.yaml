@@ -1,0 +1,47 @@
+# SentinelVision Configuration - Full Reference
+# All fields documented. Override with SENTINEL__<SECTION>__<KEY> env vars.
+
+system:
+  environment: development  # development | staging | production
+  log_level: INFO
+
+cameras:
+  - id: cam_01
+    name: Entrance Camera
+    url: rtsp://192.168.1.100:554/stream
+    enabled: true
+    frame_skip: 3
+
+database:
+  url: postgresql+asyncpg://user:pass@localhost:5432/sentinelvision
+  pool_size: 10
+  max_overflow: 20
+
+redis:
+  url: redis://localhost:6379
+  max_connections: 50
+
+inference:
+  backend: auto  # auto | openvino | onnx
+  detection_confidence_threshold: 0.45
+  reid_frequency: 10
+
+plugins:
+  shoplifting:
+    enabled: true
+    confidence_threshold: 0.6
+    alert_suppression_seconds: 300
+
+api:
+  host: 0.0.0.0
+  port: 8000
+  secret_key: CHANGE_ME_IN_PRODUCTION
+  token_expire_hours: 8
+
+evidence:
+  storage_path: /var/sentinelvision/evidence
+  retention_days: 90
+  max_frames_per_alert: 5
+
+monitoring:
+  prometheus_port: 9090

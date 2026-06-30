@@ -1,0 +1,7 @@
+# Examples
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

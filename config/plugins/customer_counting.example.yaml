@@ -1,0 +1,4 @@
+# Customer Counting plugin configuration example
+plugins:
+  customer_counting:
+    enabled: false

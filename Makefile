@@ -1,0 +1,1 @@
+.PHONY: lint test dev build\n\nlint:\n\truff check backend plugins tests\n\tmypy backend\n\ntest:\n\tpytest tests/ -m 'not performance and not stress'\n\ndev:\n\tdocker compose -f docker/docker-compose.yml up -d\n\npython backend/main.py\n\nbuild:\n\tdocker compose -f docker/docker-compose.yml build\n

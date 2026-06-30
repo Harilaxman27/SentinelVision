@@ -1,0 +1,10 @@
+[Unit]
+Description=SentinelVision Backend
+After=network.target postgresql.service redis.service
+
+[Service]
+ExecStart=/opt/sentinelvision/venv/bin/python backend/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

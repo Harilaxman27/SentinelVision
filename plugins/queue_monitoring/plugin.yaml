@@ -1,0 +1,5 @@
+name: queue_monitoring
+version: 0.0.1
+author: SentinelVision Engineering
+description: Queue length and wait time monitoring. (Not yet implemented)
+status: scaffold

@@ -1,0 +1,7 @@
+# Events
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

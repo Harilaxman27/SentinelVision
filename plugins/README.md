@@ -1,0 +1,7 @@
+# Plugins
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

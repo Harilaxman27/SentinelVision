@@ -1,0 +1,8 @@
+# Shoplifting plugin configuration example
+plugins:
+  shoplifting:
+    enabled: true
+    zones:
+      high_value_area:
+        polygon: [[0,0],[100,0],[100,100],[0,100]]
+        dwell_threshold_seconds: 30

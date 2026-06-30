@@ -1,0 +1,5 @@
+name: fall_detection
+version: 0.0.1
+author: SentinelVision Engineering
+description: Fall detection via bounding box aspect ratio change and stillness. (Not yet implemented)
+status: scaffold

@@ -1,0 +1,5 @@
+name: violence_detection
+version: 0.0.1
+author: SentinelVision Engineering
+description: Violence detection using rapid proximate movement and pose analysis. (Not yet implemented)
+status: scaffold

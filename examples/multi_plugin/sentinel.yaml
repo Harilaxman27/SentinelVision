@@ -1,0 +1,21 @@
+system:
+  environment: production
+cameras:
+  - id: cam_01
+    name: Main Floor
+    url: rtsp://192.168.1.100:554/stream
+    enabled: true
+    frame_skip: 3
+  - id: cam_02
+    name: Checkout
+    url: rtsp://192.168.1.101:554/stream
+    enabled: true
+    frame_skip: 3
+plugins:
+  shoplifting:
+    enabled: true
+    confidence_threshold: 0.6
+  queue_monitoring:
+    enabled: true
+    max_queue_length: 5
+    max_wait_seconds: 120

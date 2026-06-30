@@ -1,0 +1,7 @@
+# Database
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

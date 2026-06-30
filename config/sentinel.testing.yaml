@@ -1,0 +1,4 @@
+# Test environment overrides - deterministic values
+system:
+  environment: testing
+  log_level: WARNING

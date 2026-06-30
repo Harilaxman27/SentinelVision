@@ -1,0 +1,7 @@
+# API
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

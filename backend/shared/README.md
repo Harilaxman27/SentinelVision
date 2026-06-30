@@ -1,0 +1,7 @@
+# Shared
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

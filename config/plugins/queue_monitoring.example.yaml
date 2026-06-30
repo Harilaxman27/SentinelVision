@@ -1,0 +1,4 @@
+# Queue Monitoring plugin configuration example
+plugins:
+  queue_monitoring:
+    enabled: false

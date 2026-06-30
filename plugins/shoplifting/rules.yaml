@@ -1,0 +1,15 @@
+# Shoplifting Detection Rules
+# Loaded by DecisionEngine at startup
+rules:
+  - name: dwell_and_exit
+    trigger_events: [DWELL_ALERT, RAPID_EXIT]
+    required_sequence: [DWELL_ALERT, RAPID_EXIT]
+    time_window_seconds: 120
+    confidence_score: 0.7
+    action: emit_alert
+  - name: loitering_concealment
+    trigger_events: [LOITERING, CONCEALMENT_POSTURE]
+    required_sequence: [LOITERING, CONCEALMENT_POSTURE]
+    time_window_seconds: 180
+    confidence_score: 0.8
+    action: emit_alert

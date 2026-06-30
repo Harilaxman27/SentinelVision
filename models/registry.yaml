@@ -1,0 +1,18 @@
+# Model Registry - pinned versions for reproducibility
+models:
+  - name: yolo11n
+    version: "11.0.0"
+    file: yolo11n.pt
+    url: https://github.com/ultralytics/assets/releases/download/v11.0.0/yolo11n.pt
+    sha256: TODO
+    exported:
+      openvino: yolo11n_openvino_model/
+      onnx: yolo11n.onnx
+  - name: osnet_x0_25
+    version: "1.0.0"
+    file: osnet_x0_25_market.pt
+    url: https://drive.google.com/TODO
+    sha256: TODO
+    exported:
+      openvino: osnet_x0_25_openvino_model/
+      onnx: osnet_x0_25.onnx

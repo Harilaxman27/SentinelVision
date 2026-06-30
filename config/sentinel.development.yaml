@@ -1,0 +1,4 @@
+# Development overrides
+system:
+  environment: development
+  log_level: DEBUG

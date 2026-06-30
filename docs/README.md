@@ -1,0 +1,7 @@
+# Documentation
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

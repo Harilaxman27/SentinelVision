@@ -1,0 +1,10 @@
+[Unit]
+Description=SentinelVision Camera Worker Supervisor
+After=sentinelvision-backend.service
+
+[Service]
+ExecStart=/opt/sentinelvision/venv/bin/python -m backend.camera.manager
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

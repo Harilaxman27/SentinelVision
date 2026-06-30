@@ -1,0 +1,7 @@
+# Perception
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

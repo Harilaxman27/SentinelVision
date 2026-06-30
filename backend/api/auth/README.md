@@ -1,0 +1,7 @@
+# Auth
+
+## Purpose
+
+## Responsibilities
+
+## Dependencies

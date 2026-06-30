@@ -1,0 +1,24 @@
+[project]
+name = "sentinelvision"
+version = "0.1.0"
+description = "Production-grade Retail Intelligence Platform"
+requires-python = ">= 3.11"
+
+[project.dependencies]
+# TODO: populate after architecture approval
+
+[project.optional-dependencies]
+dev = []
+test = []
+inference-openvino = []
+inference-cuda = []
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["performance: performance tests", "stress: stress tests"]
